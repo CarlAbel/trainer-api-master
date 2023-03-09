@@ -4,7 +4,7 @@ var app = require("../app");
 var http = require("http");
 
 // Define a port for the server to listen on
-var port = process.env.PORT || 4000;
+var port = 4000;
 app.set("port", port);
 
 // Create a server instance
