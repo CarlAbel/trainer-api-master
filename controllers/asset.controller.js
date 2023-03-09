@@ -5,7 +5,7 @@ async function createSingleAsset(req, res, next) {
 	try {
 		let file = saveFile(req.files.file);
 		let asset = await Asset.create({
-		  url: "https://test-trainer-api.onrender.com/file-bucket/" + file,
+		  url: "https://test-trainer-api.onrender.com/file-bucket" + file,
 		});
 		res.json(asset);
 	  } catch (error) {
